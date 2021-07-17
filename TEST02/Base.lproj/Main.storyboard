@@ -315,7 +315,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Section-1" id="eDE-Ds-eWA">
+                            <tableViewSection id="eDE-Ds-eWA">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="130" id="sQ0-Vh-Q1R">
                                         <rect key="frame" x="0.0" y="882" width="414" height="130"/>
