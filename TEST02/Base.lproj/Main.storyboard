@@ -97,26 +97,23 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="480" height="128"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VFy-nR-tOo">
+                                                                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VFy-nR-tOo">
                                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <gestureRecognizers/>
                                                                     <imageReference key="image" image="Image-2"/>
+                                                                    <connections>
+                                                                        <outletCollection property="gestureRecognizers" destination="JSU-Gv-rSk" appends="YES" id="Wob-DG-Nmt"/>
+                                                                    </connections>
                                                                 </imageView>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Image-13" translatesAutoresizingMaskIntoConstraints="NO" id="qyX-ej-7HU">
+                                                                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="Image-13" translatesAutoresizingMaskIntoConstraints="NO" id="qyX-ej-7HU">
                                                                     <rect key="frame" x="240" y="0.0" width="240" height="128"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                </imageView>
-                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4e5-Hh-5Io">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="480" height="128"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                    <state key="normal">
-                                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    </state>
+                                                                    <gestureRecognizers/>
                                                                     <connections>
-                                                                        <segue destination="IfN-qs-Ezk" kind="show" id="4AI-tM-J9R"/>
+                                                                        <outletCollection property="gestureRecognizers" destination="QPT-G5-fXv" appends="YES" id="2r0-cH-uN6"/>
                                                                     </connections>
-                                                                </button>
+                                                                </imageView>
                                                             </subviews>
                                                             <viewLayoutGuide key="safeArea" id="5oh-SL-EXJ"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -144,13 +141,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="雷超" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81l-6a-usH">
-                                                    <rect key="frame" x="229" y="0.0" width="185" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pPU-gR-feb">
                                                     <rect key="frame" x="0.0" y="2" width="240" height="128"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -181,6 +171,14 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </scrollView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1超雷超雷超雷超雷超雷超雷超2超雷超雷超雷超雷超雷超雷超3超雷超雷超雷超雷超雷超雷超4超雷超雷超雷超雷超雷超雷超" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2yS-c9-tIj">
+                                                    <rect key="frame" x="229" y="0.0" width="185" height="130"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -192,15 +190,21 @@
                             <outlet property="delegate" destination="Ubm-pP-gri" id="r3v-JX-yfC"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="電" id="4V5-MD-Obx">
-                        <imageReference key="image" image="cloud.bolt" catalog="system"/>
-                        <color key="badgeColor" red="0.2201237576" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBarItem>
                     <navigationItem key="navigationItem" title="圖庫" id="DIR-vT-0L7"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ytk-M0-jzb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="JSU-Gv-rSk">
+                    <connections>
+                        <segue destination="IfN-qs-Ezk" kind="show" id="nEd-jw-qiZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="QPT-G5-fXv">
+                    <connections>
+                        <segue destination="IfN-qs-Ezk" kind="show" id="joS-Nu-X6r"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1887" y="-593"/>
+            <point key="canvasLocation" x="1886.9565217391305" y="-593.30357142857144"/>
         </scene>
         <!--比卡超-->
         <scene sceneID="Rtn-Wn-vDx">
@@ -427,11 +431,16 @@
         <scene sceneID="kAs-VO-nl8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FmR-bo-2U1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="海報" id="pBI-wG-N7X"/>
+                    <tabBarItem key="tabBarItem" title="海報" id="pBI-wG-N7X">
+                        <imageReference key="image" image="text.book.closed.fill" catalog="system"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PFM-s9-e21">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.2201237576" green="0.80000000000000004" blue="0.86031871179999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                         <navigationBarAppearance key="scrollEdgeAppearance"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -443,11 +452,13 @@
             </objects>
             <point key="canvasLocation" x="1177" y="88"/>
         </scene>
-        <!--Item-->
+        <!--電-->
         <scene sceneID="zum-Gl-601">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YXt-gI-9gY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="wVr-M2-jYI"/>
+                    <tabBarItem key="tabBarItem" title="電" id="wVr-M2-jYI">
+                        <imageReference key="image" image="cloud.bolt.fill" catalog="system"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="jJl-HR-Qcj"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xve-gf-X8G">
@@ -464,6 +475,9 @@
             <point key="canvasLocation" x="1177" y="-593"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="nEd-jw-qiZ"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="1269" height="1239"/>
         <image name="Image-1" width="119" height="119"/>
@@ -479,7 +493,11 @@
         <image name="Image-7" width="300" height="168"/>
         <image name="Image-8" width="298" height="169"/>
         <image name="Image-9" width="300" height="168"/>
-        <image name="cloud.bolt" catalog="system" width="122" height="128"/>
+        <image name="cloud.bolt.fill" catalog="system" width="122" height="128"/>
+        <image name="text.book.closed.fill" catalog="system" width="115" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
